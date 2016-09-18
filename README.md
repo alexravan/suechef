@@ -70,3 +70,5 @@ Anyone who cooks at home or is a cooking enthusiast would use this app.
 + Advertise on cooking and recipe sites
 + Product Hunt
 + Reddit
+
+** Created by Alex Ravan, Chase Crumbaugh, and Vincent Tran **
