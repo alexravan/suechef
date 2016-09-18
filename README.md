@@ -71,4 +71,4 @@ Anyone who cooks at home or is a cooking enthusiast would use this app.
 + Product Hunt
 + Reddit
 
-** Created by Alex Ravan, Chase Crumbaugh, and Vincent Tran **
+**Created by Alex Ravan, Chase Crumbaugh, and Vincent Tran**
