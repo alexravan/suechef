@@ -17,7 +17,7 @@
         $('#main_content').headsmart()
       })
     </script>
-    <title>Sue-chef by chentetran</title>
+    <title>Sue-chef Engineering Notebook</title>
   </head>
 
   <body>
@@ -46,11 +46,36 @@
 
 
       <section id="main_content">
-        <h1>
-<a id="sue-chef" class="anchor" href="#sue-chef" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sue Chef</h1>
+
+<!-- ***************************************************************************************************************** -->
+<!-- ***************************************************************************************************************** -->
+<!-- ***************************************************************************************************************** -->
+
+<h1><a id="sue-chef" class="anchor" href="#sue-chef" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Further Thoughts on the Tech behind SueChef (9/23/16)</h1>
+
+
+<p>The team is still studying up on Android development. While we are still learning the technicals, we've done a lot of brainstorming
+on the technologies we can incorporate into the product.</p>
+
+<p>As discussed in our previous blog entry, CMUSphinx will be a necessity for keyword spotting. Without it, users will have to press a button to turn on their microphones, essentially ruining the purpose of SueChef.</p>
+
+<p>Unfortunately, we cannot use CMUSphinx for its speech recognition and speech parsing abilities as we'd have to set up our own language models and dictionaries. As an alternative, we decided to incorporate Wit.ai. It has both speech recognition and speech parsing through a REST API. As Venturebeat says, "thanks to companies like Wit.ai, even kids at hackathons are showing off weekend projects that are voice-controlled." This should speed up our development.</p>
+
+<p>If you took a look at our mockups, image display, especially in grid layouts, will be integral to the design of our app. We are looking to incorporate Picasso, an Android library for image downloading and caching. It will make user experience a lot more responsive and take care of a lot of the headaches that come from layouts.</p>
+
+<p>We're looking to start development in the next week.</p>
+
+
+
+<!-- ***************************************************************************************************************** -->
+<!-- ***************************************************************************************************************** -->
+<!-- ***************************************************************************************************************** -->
+
+
+<h1><a id="sue-chef" class="anchor" href="#sue-chef" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SueChef App Proposal (9/16/16)</h1>
 
 <h4>
-<a id="briefly-explain-the-need-for-the-app-the-what" class="anchor" href="#briefly-explain-the-need-for-the-app-the-what" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Briefly explain the need for the app (the "what")</h4>
+<a id="briefly-explain-the-need-for-the-app-the-what" class="anchor" href="#briefly-explain-the-need-for-the-app-the-what" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Goal of SueChef</h4>
 
 <p>Sue Chef is your assistant in the kitchen.
 She will help you while you cook by reading the recipe to you and responding to your voice.</p>
@@ -60,12 +85,12 @@ She will help you while you cook by reading the recipe to you and responding to 
 "What's the next step?"</p>
 
 <h4>
-<a id="list-the-stakeholders-and-customers-of-the-apps-the-who" class="anchor" href="#list-the-stakeholders-and-customers-of-the-apps-the-who" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List the stakeholders and customers of the apps (the "who")</h4>
+<a id="list-the-stakeholders-and-customers-of-the-apps-the-who" class="anchor" href="#list-the-stakeholders-and-customers-of-the-apps-the-who" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Target demographic</h4>
 
 <p>Anyone who cooks at home or is a cooking enthusiast would use this app.</p>
 
 <h4>
-<a id="using-wireframes-sketch-the-most-important-views-of-the-app" class="anchor" href="#using-wireframes-sketch-the-most-important-views-of-the-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using wireframes, sketch the most important views of the app.</h4>
+<a id="using-wireframes-sketch-the-most-important-views-of-the-app" class="anchor" href="#using-wireframes-sketch-the-most-important-views-of-the-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Wireframe and mockup ideas</h4>
 
 <h5>
 <a id="recipe-detail" class="anchor" href="#recipe-detail" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Recipe Detail</h5>
@@ -91,7 +116,6 @@ She will help you while you cook by reading the recipe to you and responding to 
 <a id="platform-architecture" class="anchor" href="#platform-architecture" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Platform Architecture</h4>
 
 <ol>
-<li>MySQL</li>
 <li>Node.js server</li>
 <li>CMU Sphinx for speech recognition</li>
 <li>Big Oven API 
@@ -116,7 +140,7 @@ She will help you while you cook by reading the recipe to you and responding to 
 </ul>
 
 <h4>
-<a id="list-and-briefly-describe-the-secondary-functionality-of-the-app-the-functions-and-transactions-of-the-app-that-are-nice-to-have-only-if-time-allows" class="anchor" href="#list-and-briefly-describe-the-secondary-functionality-of-the-app-the-functions-and-transactions-of-the-app-that-are-nice-to-have-only-if-time-allows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List and briefly describe the secondary functionality of the app, the functions and transactions of the app that are nice to have only if time allows.</h4>
+<a id="list-and-briefly-describe-the-secondary-functionality-of-the-app-the-functions-and-transactions-of-the-app-that-are-nice-to-have-only-if-time-allows" class="anchor" href="#list-and-briefly-describe-the-secondary-functionality-of-the-app-the-functions-and-transactions-of-the-app-that-are-nice-to-have-only-if-time-allows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Future plans and extended functionality</h4>
 
 <ul>
 <li>Responds to more advanced commands like "What temperature should I preheat the oven to?"</li>
@@ -129,7 +153,7 @@ She will help you while you cook by reading the recipe to you and responding to 
 </ul>
 
 <h4>
-<a id="list-the-features-on-a-mobile-device-that-the-app-will-use-eg-camera-gps-sms-flashlight" class="anchor" href="#list-the-features-on-a-mobile-device-that-the-app-will-use-eg-camera-gps-sms-flashlight" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List the features on a mobile device that the app will use (e.g., camera, GPS, SMS, flashlight).</h4>
+<a id="list-the-features-on-a-mobile-device-that-the-app-will-use-eg-camera-gps-sms-flashlight" class="anchor" href="#list-the-features-on-a-mobile-device-that-the-app-will-use-eg-camera-gps-sms-flashlight" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mobile App Features</h4>
 
 <ul>
 <li>Speakers</li>
@@ -139,7 +163,7 @@ She will help you while you cook by reading the recipe to you and responding to 
 </ul>
 
 <h4>
-<a id="briefly-describe-any-limitations-each-team-member-may-feel-that-will-hold-back-progress" class="anchor" href="#briefly-describe-any-limitations-each-team-member-may-feel-that-will-hold-back-progress" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Briefly describe any limitations each team member may feel that will hold back progress.</h4>
+<a id="briefly-describe-any-limitations-each-team-member-may-feel-that-will-hold-back-progress" class="anchor" href="#briefly-describe-any-limitations-each-team-member-may-feel-that-will-hold-back-progress" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Obstacles and Limitations</h4>
 
 <ul>
 <li>Issues with voice recognition</li>
@@ -148,7 +172,7 @@ She will help you while you cook by reading the recipe to you and responding to 
 </ul>
 
 <h4>
-<a id="briefly-describe-how-your-team-plans-to-market-or-advertise-the-app" class="anchor" href="#briefly-describe-how-your-team-plans-to-market-or-advertise-the-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Briefly describe how your team plans to market or advertise the app.</h4>
+<a id="briefly-describe-how-your-team-plans-to-market-or-advertise-the-app" class="anchor" href="#briefly-describe-how-your-team-plans-to-market-or-advertise-the-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Market/Advertising Strategy</h4>
 
 <ul>
 <li>Have YouTube cooks use and mention the app in videos</li>
