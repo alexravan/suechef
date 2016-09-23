@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Sue-chef by chentetran</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/chentetran/suechef">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Sue-chef</h1>
+            <h2>An Android voice-activated cooking assistant.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/chentetran/suechef/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/chentetran/suechef/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="sue-chef" class="anchor" href="#sue-chef" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sue Chef</h1>
+
+<h4>
+<a id="briefly-explain-the-need-for-the-app-the-what" class="anchor" href="#briefly-explain-the-need-for-the-app-the-what" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Briefly explain the need for the app (the "what")</h4>
+
+<p>Sue Chef is your assistant in the kitchen.
+She will help you while you cook by reading the recipe to you and responding to your voice.</p>
+
+<p>Ask Sue "How much oregano should I use?"
+    or
+"What's the next step?"</p>
+
+<h4>
+<a id="list-the-stakeholders-and-customers-of-the-apps-the-who" class="anchor" href="#list-the-stakeholders-and-customers-of-the-apps-the-who" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List the stakeholders and customers of the apps (the "who")</h4>
+
+<p>Anyone who cooks at home or is a cooking enthusiast would use this app.</p>
+
+<h4>
+<a id="using-wireframes-sketch-the-most-important-views-of-the-app" class="anchor" href="#using-wireframes-sketch-the-most-important-views-of-the-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using wireframes, sketch the most important views of the app.</h4>
+
+<h5>
+<a id="recipe-detail" class="anchor" href="#recipe-detail" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Recipe Detail</h5>
+
+<p><img src="images/recipe_detail.png" alt="alt text" title="Recipe Detail"></p>
+
+<h5>
+<a id="guided-cooking" class="anchor" href="#guided-cooking" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Guided Cooking</h5>
+
+<p><img src="images/guided_cooking.png" alt="alt text" title="Guided Cooking"></p>
+
+<h5>
+<a id="tinder-search" class="anchor" href="#tinder-search" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tinder Search</h5>
+
+<p><img src="images/tinder_search.png" alt="alt text" title="Tinder Search"></p>
+
+<h5>
+<a id="pinterest-search" class="anchor" href="#pinterest-search" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pinterest Search</h5>
+
+<p><img src="images/pinterest_search.png" alt="alt text" title="Pinterest Search"></p>
+
+<h4>
+<a id="platform-architecture" class="anchor" href="#platform-architecture" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Platform Architecture</h4>
+
+<ol>
+<li>MySQL</li>
+<li>Node.js server</li>
+<li>CMU Sphinx for speech recognition</li>
+<li>Big Oven API 
+⋅⋅* (350,000+ recipes)</li>
+</ol>
+
+<h4>
+<a id="core-functionalities" class="anchor" href="#core-functionalities" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Core functionalities</h4>
+
+<ul>
+<li>Allow user to interact with recipes</li>
+<li>Sue responds to basic voice commands
+
+<ol>
+<li>"Sue, next step."</li>
+<li>"Sue, repeat that step."</li>
+<li>
+</ol>
+</li>
+<li>Sue reads the recipes aloud</li>
+<li>Search for recipes</li>
+</ul>
+
+<h4>
+<a id="list-and-briefly-describe-the-secondary-functionality-of-the-app-the-functions-and-transactions-of-the-app-that-are-nice-to-have-only-if-time-allows" class="anchor" href="#list-and-briefly-describe-the-secondary-functionality-of-the-app-the-functions-and-transactions-of-the-app-that-are-nice-to-have-only-if-time-allows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List and briefly describe the secondary functionality of the app, the functions and transactions of the app that are nice to have only if time allows.</h4>
+
+<ul>
+<li>Responds to more advanced commands like "What temperature should I preheat the oven to?"</li>
+<li>Tinder-style UI for finding new recipes</li>
+<li>Pinterest-style following other users/chefs</li>
+<li>Ability to comment and rate recipes </li>
+<li>Add recipes from various sites (Pinterest, NYTCooking, Food Network, etc)</li>
+<li>Take a photo of a recipe and allow Sue to read it</li>
+<li>Search recipes by nutritional information</li>
+</ul>
+
+<h4>
+<a id="list-the-features-on-a-mobile-device-that-the-app-will-use-eg-camera-gps-sms-flashlight" class="anchor" href="#list-the-features-on-a-mobile-device-that-the-app-will-use-eg-camera-gps-sms-flashlight" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List the features on a mobile device that the app will use (e.g., camera, GPS, SMS, flashlight).</h4>
+
+<ul>
+<li>Speakers</li>
+<li>Internet</li>
+<li>Mic</li>
+<li>Camera</li>
+</ul>
+
+<h4>
+<a id="briefly-describe-any-limitations-each-team-member-may-feel-that-will-hold-back-progress" class="anchor" href="#briefly-describe-any-limitations-each-team-member-may-feel-that-will-hold-back-progress" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Briefly describe any limitations each team member may feel that will hold back progress.</h4>
+
+<ul>
+<li>Issues with voice recognition</li>
+<li>Parsing of recipes from non-API sources</li>
+<li>Difficulty building social aspect of the app</li>
+</ul>
+
+<h4>
+<a id="briefly-describe-how-your-team-plans-to-market-or-advertise-the-app" class="anchor" href="#briefly-describe-how-your-team-plans-to-market-or-advertise-the-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Briefly describe how your team plans to market or advertise the app.</h4>
+
+<ul>
+<li>Have YouTube cooks use and mention the app in videos</li>
+<li>Advertise on cooking and recipe sites</li>
+<li>Product Hunt</li>
+<li>Reddit</li>
+</ul>
+
+<p><strong>Created by Alex Ravan, Chase Crumbaugh, and Vincent Tran</strong></p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/chentetran">chentetran</a> can be found on <a href="https://github.com/chentetran/suechef">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
