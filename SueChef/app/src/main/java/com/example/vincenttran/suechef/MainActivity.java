@@ -16,9 +16,14 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.example.vincenttran.suechef.Recipe;
+
+
 
 public class MainActivity extends AppCompatActivity {
     private final List<String> urls = new ArrayList<String>();
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,30 +52,18 @@ public class MainActivity extends AppCompatActivity {
 //                    }
 //                });
 
-        String[] urls = {
-                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
-                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIGDZz8ASXcIUYl7yKTY9pDnMaTBIzhycqCRkBdiRteEU855_4sA",
-                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
-                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
-                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
-                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
-                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
-                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
-                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
-                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
-                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
-                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
-                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
-                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
-                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
-                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
-                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
-                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
-                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
-                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",};
+//        ng newTitle, String newImgUrl, String newDescription, String[] newIngredients, String[] newDirections) {
+        String[] ingredients = new String[] {"tomato", "cheese", "flour", "water", "yeast"};
+        String[] directions  = new String[] {"Make the dough", "assemble pizza", "cook pizza"};
 
-        mGridView.setAdapter(new ImageListAdapter(MainActivity.this, urls));
+
+
+        Recipe pizza = new Recipe("Pizza", "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
+                                "this is a pizza", ingredients, directions);
+        Recipe[] recipes = new Recipe[] {pizza};
+
+
+        mGridView.setAdapter(new ImageListAdapter(MainActivity.this, recipes));
 
     }
 

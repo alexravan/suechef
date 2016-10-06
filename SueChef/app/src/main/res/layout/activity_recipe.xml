@@ -10,15 +10,15 @@
     android:orientation="vertical"
     tools:context="com.example.vincenttran.suechef.RecipeActivity">
 
-    <ImageView
+    <ImageView android:id="@+id/recipeDetailImg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher"/>
-    <TextView
+    <TextView android:id="@+id/recipeDetailTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Recipe Title"/>
-    <TextView
+    <TextView android:id="@+id/recipeDetailDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="A short description goes here"/>

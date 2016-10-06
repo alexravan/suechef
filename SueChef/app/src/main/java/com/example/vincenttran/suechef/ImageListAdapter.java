@@ -9,6 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
+import com.example.vincenttran.suechef.Recipe;
+
+import java.io.Serializable;
 
 /**
  * Created by vincenttran on 10/5/16.
@@ -18,26 +21,26 @@ public class ImageListAdapter extends ArrayAdapter {
     private Context context;
     private LayoutInflater inflater;
 
-    private String[] imageUrls;
+    private Recipe[] recipes;
 
-    public ImageListAdapter(Context context, String[] imageUrls) {
-        super(context, R.layout.grid_item_layout, imageUrls);
+    public ImageListAdapter(Context context, Recipe[] recipes) {
+        super(context, R.layout.grid_item_layout, recipes);
 
         this.context = context;
-        this.imageUrls = imageUrls;
+        this.recipes = recipes;
 
         inflater = LayoutInflater.from(context);
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         if (null == convertView) {
             convertView = inflater.inflate(R.layout.grid_item_layout, parent, false);
         }
 
         Picasso
                 .with(context)
-                .load(imageUrls[position])
+                .load(recipes[position].imgUrl)
                 .fit() // will explain later
                 .into((ImageView) convertView);
 
@@ -45,6 +48,7 @@ public class ImageListAdapter extends ArrayAdapter {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, RecipeActivity.class);
+                intent.putExtra("recipe", recipes[position]);
                 context.startActivity(intent);
             }
         });
