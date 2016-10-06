@@ -47,7 +47,28 @@ public class MainActivity extends AppCompatActivity {
 //                    }
 //                });
 
-        String[] urls = {"https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg", "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIGDZz8ASXcIUYl7yKTY9pDnMaTBIzhycqCRkBdiRteEU855_4sA"};
+        String[] urls = {
+                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
+                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIGDZz8ASXcIUYl7yKTY9pDnMaTBIzhycqCRkBdiRteEU855_4sA",
+                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
+                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
+                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
+                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
+                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
+                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
+                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
+                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
+                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
+                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
+                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
+                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
+                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
+                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
+                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
+                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",
+                "https://static01.nyt.com/images/2016/10/05/dining/05KITCH-WEB1/05KITCH-WEB1-articleLarge.jpg",
+                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB0lFmcob-qKi9nmDxnCN68jpvOEbNOjcSyiOhQrWTf5YyOZ0tKPbrnlla",};
 
         mGridView.setAdapter(new ImageListAdapter(MainActivity.this, urls));
 
