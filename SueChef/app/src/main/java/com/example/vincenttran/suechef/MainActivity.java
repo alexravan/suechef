@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        ng newTitle, String newImgUrl, String newDescription, String[] newIngredients, String[] newDirections) {
         String[] ingredients = new String[] {"tomato", "cheese", "flour", "water", "yeast"};
-        String[] directions  = new String[] {"Make the dough", "assemble pizza", "cook pizza"};
+        String[] directions  = new String[] {"Make the dough", "Assemble pizza", "Cook pizza"};
 
 
 
