@@ -11,6 +11,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
+            android:background="@color/colorBackground"
             android:layout_height="match_parent">
 
             <android.support.v7.widget.Toolbar
@@ -25,13 +26,15 @@
 
                 <ImageView android:id="@+id/recipeDetailImg"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     />
 
                 <ExpandableListView
+                    android:layout_weight="2"
                     android:id="@+id/expandableList"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="0dp">
 
                 </ExpandableListView>
         </LinearLayout>

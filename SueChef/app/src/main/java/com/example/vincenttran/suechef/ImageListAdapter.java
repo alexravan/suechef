@@ -7,9 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 import com.example.vincenttran.suechef.Recipe;
+
+import org.w3c.dom.Text;
 
 import java.io.Serializable;
 
@@ -42,7 +45,11 @@ public class ImageListAdapter extends ArrayAdapter {
                 .with(context)
                 .load(recipes[position].imgUrl)
                 .fit() // will explain later
-                .into((ImageView) convertView);
+                .into( ((ImageView) ((ViewGroup) convertView).getChildAt(0)));
+
+        TextView recipeName = (TextView) (((ViewGroup) convertView).getChildAt(1));
+        recipeName.setText(recipes[position].title);
+
 
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
