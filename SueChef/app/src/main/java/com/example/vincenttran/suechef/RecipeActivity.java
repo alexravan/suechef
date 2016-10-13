@@ -1,10 +1,12 @@
 package com.example.vincenttran.suechef;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
@@ -35,16 +37,26 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
 
+
         final Recipe recipe = (Recipe) getIntent().getSerializableExtra("recipe");
 
-        ImageView img = (ImageView) findViewById(R.id.recipeDetailImg);
-//        TextView title = (TextView) findViewById(R.id.recipeDetailTitle);
-//        TextView description = (TextView) findViewById(R.id.recipeDetailDesc);
-//        ListView ingredientsListView = (ListView) findViewById(R.id.ingredientsListView);
-//        ListView directionsListView = (ListView) findViewById(R.id.directionsListView);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitleTextColor(Color.WHITE);
+        toolbar.setTitle(recipe.title);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
+        ImageView img = (ImageView) findViewById(R.id.recipeDetailImg);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,30 +66,11 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
             }
         });
 
-        setTitle(recipe.title);
-
         Picasso
                 .with(this)
                 .load(recipe.imgUrl)
                 .fit()
                 .into(img);
-//
-//        title.setText(recipe.title);
-//        description.setText(recipe.description);
-//
-//        ingredientsListView.setAdapter(new ArrayAdapter<>(
-//                RecipeActivity.this,
-//                android.R.layout.simple_list_item_1,
-//                android.R.id.text1,
-//                recipe.ingredients
-//        ));
-//
-//        directionsListView.setAdapter(new ArrayAdapter<>(
-//                RecipeActivity.this,
-//                android.R.layout.simple_list_item_1,
-//                android.R.id.text1,
-//                recipe.directions
-//        ));
 
         // get the listview
         expListView = (ExpandableListView) findViewById(R.id.expandableList);

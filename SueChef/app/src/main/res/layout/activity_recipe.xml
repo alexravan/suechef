@@ -7,17 +7,26 @@
     android:orientation="vertical"
     tools:context="com.example.vincenttran.suechef.RecipeActivity">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="match_parent">
 
+            <android.support.v7.widget.Toolbar
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:theme="@style/ToolbarColoredBackArrow"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/actionBarSize"
+                android:background="?android:attr/colorPrimary"/>
 
 
                 <ImageView android:id="@+id/recipeDetailImg"
                     android:layout_width="match_parent"
-                    android:layout_height="125dp"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:layout_height="150dp"
+                    />
 
                 <ExpandableListView
                     android:id="@+id/expandableList"
