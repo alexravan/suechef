@@ -46,6 +46,28 @@
 
 
       <section id="main_content">
+
+<!-- ***************************************************************************************************************** -->
+<!-- ***************************************************************************************************************** -->
+<!-- ***************************************************************************************************************** -->
+
+
+<h1>MVP Features and Next Steps (10/13/16)</h1>
+
+<p>We put our heads down and squeezed out an MVP today. We implemented all of the features that we aimed for last week, including a step-by-step view, called the StepsActivity, and a recipe overview activity, called the RecipeActivity.</p>
+
+<p>In StepsActivity, the user can use buttons to navigate through the recipe directions. As the user moves forward or backward in the recipe, the app uses the Android text-to-speech feature to dictate the recipes.</p>
+
+<p>The team also implemented several design aspects of Material Design. We used a floating action button in RecipeActivity and applied a color theme, following <a href="https://material.google.com/style/color.html">Android's Material Design color guidelines</a>. Since red and white are reminiscent of food (think checkered recipe quilts), we chose to use related shades of red.</p>
+
+<p>While we call this the MVP, we are missing some crucial features that we hope to resolve in the coming weeks. For one, all recipes are currently hardcoded into the app. We've had trouble finding recipe APIs that fit our needs, as a lot of APIs aren't free, don't have cooking directions, or have directions that are way too long. Ideally, we need an API that gives us recipes in array form with one or two sentences max per step. Since we couldn't find an API, we haven't built the server. We happened to stumble across <a href="https://github.com/kcmoffat/recipe-api">this recipe scraper API</a> found on GitHub, so we likely will be using this for recipes until we find a more appropriate API to consume</p>
+
+<p>For two, the main appeal of this app will be its voice recognition. Users will be interested in talking to their cooking assistant, Sue, but as it is right now, users have to press buttons to have Sue talk to them. As conversation is one-sided, the app in its current state doesn't have much wow factor. We hope to tackle that soon.</p>
+
+  <img src="./images/MainActivity.png" alt="MainActivity">
+  <img src="./images/RecipeActivity.png" alt="RecipeActivity">
+  <img src="./images/StepsActivity.png" alt="StepsActivity">
+
 <!-- ***************************************************************************************************************** -->
 <!-- ***************************************************************************************************************** -->
 <!-- ***************************************************************************************************************** -->
