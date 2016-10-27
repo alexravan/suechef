@@ -21,6 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="?android:attr/actionBarSize"
+                android:elevation="@dimen/mic_button_halo_radius_max"
                 android:background="?android:attr/colorPrimary"/>
 
 
@@ -28,6 +29,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:contentDescription="@string/contentDescription"
                     />
 
                 <ExpandableListView

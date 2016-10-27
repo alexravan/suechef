@@ -44,7 +44,7 @@
         android:gravity="center"
         android:background="@color/colorBackground"
         android:clipChildren="true"
-        >
+        tools:ignore="RtlSymmetry">
 
     </GridView>
 

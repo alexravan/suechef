@@ -2,6 +2,7 @@ package com.example.vincenttran.suechef;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,19 +13,11 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 import com.example.vincenttran.suechef.Recipe;
 
-import org.w3c.dom.Text;
+class ImageListAdapter extends ArrayAdapter<Recipe> {
+    private final Context context;
+    private final LayoutInflater inflater;
 
-import java.io.Serializable;
-
-/**
- * Created by vincenttran on 10/5/16.
- */
-
-public class ImageListAdapter extends ArrayAdapter {
-    private Context context;
-    private LayoutInflater inflater;
-
-    private Recipe[] recipes;
+    private final Recipe[] recipes;
 
     public ImageListAdapter(Context context, Recipe[] recipes) {
         super(context, R.layout.grid_item_layout, recipes);
@@ -35,8 +28,9 @@ public class ImageListAdapter extends ArrayAdapter {
         inflater = LayoutInflater.from(context);
     }
 
+    @NonNull
     @Override
-    public View getView(final int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, @NonNull ViewGroup parent) {
         if (null == convertView) {
             convertView = inflater.inflate(R.layout.grid_item_layout, parent, false);
         }

@@ -9,11 +9,11 @@ import android.view.View;
 import android.widget.TextView;
 
 public class StepsActivity extends AppCompatActivity {
-    TextView stepName;
-    TextView instruction;
-    String[] directions;
-    int stepNumber;
-    TextToSpeech tts;
+    private TextView stepName;
+    private TextView instruction;
+    private String[] directions;
+    private int stepNumber;
+    private TextToSpeech tts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +24,10 @@ public class StepsActivity extends AppCompatActivity {
         toolbar.setTitleTextColor(Color.WHITE);
         toolbar.setTitle("Sue Chef");
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,13 +67,13 @@ public class StepsActivity extends AppCompatActivity {
         setText();
     }
 
-    public void setText() {
-        stepName.setText("Step " + stepNumber);
+    private void setText() {
+        String step = getResources().getString(R.string.word_for_step) + stepNumber;
+        stepName.setText(step);
         String direction = directions[stepNumber - 1];
         instruction.setText(direction);
 
-        tts.speak(direction, TextToSpeech.QUEUE_FLUSH, null);
-
+        tts.speak(direction, TextToSpeech.QUEUE_FLUSH, null, null);
     }
 
 }

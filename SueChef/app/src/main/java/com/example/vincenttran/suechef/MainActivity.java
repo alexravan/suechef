@@ -1,29 +1,18 @@
 package com.example.vincenttran.suechef;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.widget.GridView;
-import android.widget.ImageView;
-import android.widget.Toast;
 
-import com.google.gson.JsonObject;
-import com.koushikdutta.async.future.FutureCallback;
-import com.koushikdutta.ion.Ion;
-import com.squareup.picasso.Picasso;
-
-import java.util.ArrayList;
-import java.util.List;
 import com.example.vincenttran.suechef.Recipe;
 
 
 
 public class MainActivity extends AppCompatActivity {
-    private final List<String> urls = new ArrayList<String>();
+//    private final List<String> urls = new ArrayList<String>();
 
 
 
@@ -40,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         toolbar.setNavigationIcon(R.mipmap.ic_launcher);
 
-        final Context context = this;
+//        final Context context = this;
 //        Ion.with(this)
 //                .load("http://suechef.herokuapp.com/")
 //                .asJsonObject()
@@ -104,14 +93,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         mGridView.setAdapter(new ImageListAdapter(MainActivity.this, recipes));
-
-    }
-
-
-    public void showRecipe(View view) {
-        Intent intent = new Intent(MainActivity.this, RecipeActivity.class);
-        startActivity(intent);
-
 
     }
 }

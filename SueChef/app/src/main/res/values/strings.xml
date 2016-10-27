@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">SueChef</string>
-    <string name="title_activity_main2">Main2Activity</string>
+    <string name="contentDescription">Description goes here</string>
+    <string name="back">back</string>
+    <string name="repeat">repeat</string>
+    <string name="next">next</string>
+    <string name="word_for_step">Step</string>
 </resources>

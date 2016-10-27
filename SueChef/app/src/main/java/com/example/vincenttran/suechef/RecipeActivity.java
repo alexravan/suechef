@@ -3,23 +3,17 @@ package com.example.vincenttran.suechef;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import edu.cmu.pocketsphinx.Hypothesis;
 import edu.cmu.pocketsphinx.RecognitionListener;
 import com.example.vincenttran.suechef.Recipe;
 import com.squareup.picasso.Picasso;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,10 +21,8 @@ import java.util.HashMap;
 import java.util.List;
 
 public class RecipeActivity extends AppCompatActivity implements RecognitionListener{
-    ExpandableListAdapter listAdapter;
-    ExpandableListView expListView;
-    List<String> listDataHeader;
-    HashMap<String, List<String>> listDataChild;
+    private List<String> listDataHeader;
+    private HashMap<String, List<String>> listDataChild;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,8 +36,10 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
         toolbar.setTitleTextColor(Color.WHITE);
         toolbar.setTitle(recipe.title);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,6 +48,8 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
         });
 
         ImageView img = (ImageView) findViewById(R.id.recipeDetailImg);
+        // Set contentDescription
+        img.setContentDescription(recipe.title);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
@@ -73,12 +69,12 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
                 .into(img);
 
         // get the listview
-        expListView = (ExpandableListView) findViewById(R.id.expandableList);
+        ExpandableListView expListView = (ExpandableListView) findViewById(R.id.expandableList);
 
         // preparing list data
         prepareListData(recipe.description, recipe.ingredients, recipe.directions);
 
-        listAdapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
+        ExpandableListAdapter listAdapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
@@ -86,8 +82,8 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
     }
 
     private void prepareListData(String description, String[] ingredients, String[] directions) {
-        listDataHeader = new ArrayList<String>();
-        listDataChild = new HashMap<String, List<String>>();
+        listDataHeader = new ArrayList<>();
+        listDataChild = new HashMap<>();
 
         listDataHeader.add("Description");
         listDataHeader.add("Ingredients");
@@ -127,6 +123,7 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
 
     @Override
     public void onPartialResult(Hypothesis hypothesis) {
+
 
     }
 
