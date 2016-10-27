@@ -1,6 +1,5 @@
 package com.example.vincenttran.suechef;
 
-import android.content.Context;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
