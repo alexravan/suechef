@@ -51,6 +51,20 @@
 <!-- ***************************************************************************************************************** -->
 <!-- ***************************************************************************************************************** -->
 
+<h1>Using Lint to Clean Our Code (10/27/16)</h1>
+
+<p>In our limited experience of Android, we've encountered a lot of Android particularities: strings shouldn't be hardcoded, certain functions may raise NullPointerException, alignParentLeft should be replaced with alignParentStart, among many other things.</p>
+
+<p>Using Lint was surprising easy and pleasant. Just as described, Lint served as our much needed nit-picky code reviewer. It gave us around 100 code "errors" to fix, and a lot of the time Lint would fix it for us if we simply let it. For each of the issues, Lint gave very descriptive messages about why it should be fixed and the multiple methods to go about resolving it.</p>
+
+<p>We spent about 40 minutes reading through Lint messages and letting it fix the bugs for us. Before and after Lint reports can be seen on our GitHub repo.</p>
+
+<p>We've since continued adding on to our project, so we likely will need to run Lint again in the near future. Stay tuned for our update on incorporating CMUSphinx and API.ai.</p>
+
+<!-- ***************************************************************************************************************** -->
+<!-- ***************************************************************************************************************** -->
+<!-- ***************************************************************************************************************** -->
+
 
 <h1>MVP Features and Next Steps (10/13/16)</h1>
 
