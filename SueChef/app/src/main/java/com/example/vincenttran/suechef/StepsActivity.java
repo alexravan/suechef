@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,6 +48,8 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_steps);
 
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);  // Keep screen on
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextColor(Color.WHITE);
         toolbar.setTitle("Sue Chef");
@@ -69,45 +72,7 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
         stepName = (TextView) findViewById(R.id.stepNumber);
         instruction = (TextView) findViewById(R.id.instruction);
 
-        // Init assets for CMUSphinx
-        try {
-            Assets assets = new Assets(StepsActivity.this);
-            File assetDir = assets.syncAssets();
-            setupRecognizer(assetDir);              // Keyword Spotter init
-        } catch (IOException e) {
-            Log.e("voice_init", e.toString());
-        }
 
-        new AsyncTask<Void, Void, Exception>() {
-            @Override
-            protected Exception doInBackground(Void... params) {
-                try {
-                    Assets assets = new Assets(StepsActivity.this);
-                    File assetDir = assets.syncAssets();
-                    setupRecognizer(assetDir);
-                } catch (IOException e) {
-                    return e;
-                }
-                return null;
-            }
-
-            @Override
-            protected void onPostExecute(Exception result) {
-//                if (result != null) {
-//                    ((TextView) findViewById(R.id.caption_text))
-//                            .setText("Failed to init recognizer " + result);
-//                } else {
-//                    switchSearch(KWS_SEARCH);
-//                }
-
-                if (result != null) {
-                    Toast.makeText(StepsActivity.this, result.getMessage(), Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    search(KWS_SEARCH);
-                }
-            }
-        }.execute();
 
         // Init TextToSpeech
         tts = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
@@ -124,6 +89,53 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
         aiService = AIService.getService(this, config);
         aiService.setListener(this);
 
+    }
+
+    // User reopens app, should start keyword search
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Init assets for CMUSphinx
+        new AsyncTask<Void, Void, Exception>() {
+            @Override
+            protected Exception doInBackground(Void... params) {
+                try {
+                    Assets assets = new Assets(StepsActivity.this);
+                    File assetDir = assets.syncAssets();
+                    setupRecognizer(assetDir);
+                } catch (IOException e) {
+                    return e;
+                }
+                return null;
+            }
+
+            @Override
+            protected void onPostExecute(Exception result) {
+                if (result != null) {
+                    Toast.makeText(StepsActivity.this, result.getMessage(), Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    search(KWS_SEARCH);
+                }
+            }
+        }.execute();
+    }
+
+
+    // User minimizes app, should stop keyword search
+    @Override
+    protected void onPause() {
+        super.onPause();
+        recognizer.stop();
+        recognizer.shutdown();
+    }
+
+    // App is closed, recognizer should be deleted
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        recognizer.shutdown();
     }
 
     private void search(String search) {
