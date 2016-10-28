@@ -65,7 +65,22 @@
 <!-- ***************************************************************************************************************** -->
 <!-- ***************************************************************************************************************** -->
 
+<h1>Scraping for Recipes &amp; Flask (10/20/16)</h1>
 
+<p>Because the BigOven API requires a paid account, we have been loking for an alternative to sourcing recipes.</p>
+
+<p>We found an API that can parse a recipe if given a URL to a recipe that follows schema.org's or microformats.org's HTML recipe standards.</p>
+<a href="https://github.com/kcmoffat/recipe-api">https://github.com/kcmoffat/recipe-api</a>
+
+<p>We looked into a few different sites for sourcing recipes and settled on <a href="http://www.epicurious.com/">epicurious.com</a></p>
+
+<p>To get URLs of recipes, we're using a python script with lxml to scrape epicurious for the URL of the most recent recipes.</p>
+
+<p>Since we'll be scraping with this python script as well as doing some natural language processing, we've decided to switch to a Flask backend to serve recipes to the app.</p>
+
+<!-- ***************************************************************************************************************** -->
+<!-- ***************************************************************************************************************** -->
+<!-- ***************************************************************************************************************** -->
 <h1>MVP Features and Next Steps (10/13/16)</h1>
 
 <p>We put our heads down and squeezed out an MVP today. We implemented all of the features that we aimed for last week, including a step-by-step view, called the StepsActivity, and a recipe overview activity, called the RecipeActivity.</p>

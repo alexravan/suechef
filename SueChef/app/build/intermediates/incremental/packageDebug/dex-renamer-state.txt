@@ -1,0 +1,7 @@
+#Sat Oct 15 22:44:20 EDT 2016
+base.0=/Users/AlexanderRavan/GitHub/suechef/SueChef/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f9a7f13e3b8f6eb118a25afa7cdad2a7490df031
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/AlexanderRavan/GitHub/suechef/SueChef/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_430f6d3b438b386adf0fc9bc83344c9839a44a76/classes.dex
+base.1=/Users/AlexanderRavan/GitHub/suechef/SueChef/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_430f6d3b438b386adf0fc9bc83344c9839a44a76
+file.0=/Users/AlexanderRavan/GitHub/suechef/SueChef/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f9a7f13e3b8f6eb118a25afa7cdad2a7490df031/classes.dex
