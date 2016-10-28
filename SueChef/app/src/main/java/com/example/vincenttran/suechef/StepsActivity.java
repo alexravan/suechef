@@ -1,6 +1,7 @@
 package com.example.vincenttran.suechef;
 
 import android.graphics.Color;
+import android.os.AsyncTask;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -77,6 +78,37 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
             Log.e("voice_init", e.toString());
         }
 
+        new AsyncTask<Void, Void, Exception>() {
+            @Override
+            protected Exception doInBackground(Void... params) {
+                try {
+                    Assets assets = new Assets(StepsActivity.this);
+                    File assetDir = assets.syncAssets();
+                    setupRecognizer(assetDir);
+                } catch (IOException e) {
+                    return e;
+                }
+                return null;
+            }
+
+            @Override
+            protected void onPostExecute(Exception result) {
+//                if (result != null) {
+//                    ((TextView) findViewById(R.id.caption_text))
+//                            .setText("Failed to init recognizer " + result);
+//                } else {
+//                    switchSearch(KWS_SEARCH);
+//                }
+
+                if (result != null) {
+                    Toast.makeText(StepsActivity.this, result.getMessage(), Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    search(KWS_SEARCH);
+                }
+            }
+        }.execute();
+
         // Init TextToSpeech
         tts = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
             @Override
@@ -94,6 +126,14 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
 
     }
 
+    private void search(String search) {
+        recognizer.stop();
+
+        if (search.equals(KWS_SEARCH)) {
+            recognizer.startListening(KWS_SEARCH);
+        }
+    }
+
     private void setupRecognizer(File assetsDir) throws IOException {
         recognizer = defaultSetup()
                 .setAcousticModel(new File(assetsDir, "en-us-ptm"))
@@ -109,6 +149,7 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
         recognizer.addListener(this);
 
 //        File commandGrammar = new File(assetsDir, "commands.gram");
+//        recognizer.addKeywordSearch(KWS_SEARCH, commandGrammar);
         recognizer.addKeyphraseSearch(KWS_SEARCH, KEYPHRASE);
 
     }
@@ -143,7 +184,6 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
     }
     @Override
     public void onBeginningOfSpeech() {
-
     }
     @Override
     public void onResult(Hypothesis hypothesis) {
@@ -161,17 +201,20 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
     // Method in which keyword-spotting can react
     @Override
     public void onPartialResult(Hypothesis hypothesis) {
-        if (hypothesis == null)
-            return;
+        if (hypothesis == null) return;
+
 
         String text = hypothesis.getHypstr();
 
         if (text.equals(KEYPHRASE)) {
             Toast.makeText(this, "I heard you!", Toast.LENGTH_SHORT).show();
+
+            recognizer.stop();
+
+            // TODO: call api.ai api to start listening
+            aiService.startListening();
         }
 
-        // TODO: call api.ai api to start listening
-        aiService.startListening();
 
     }
     /****************************************************************************************/
@@ -183,6 +226,8 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
     @Override
     public void onError(AIError error) {
         Toast.makeText(this, error.toString(), Toast.LENGTH_SHORT).show();
+        aiService.stopListening();
+        recognizer.startListening(KWS_SEARCH);
     }
     @Override
     public void onListeningFinished() {
@@ -191,6 +236,9 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
 
     @Override
     public void onResult(AIResponse response) {
+        aiService.stopListening();
+        recognizer.startListening(KWS_SEARCH);
+
         Result result = response.getResult();
 
         // Get parameters
@@ -209,7 +257,6 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
 
     @Override
     public void onListeningStarted() {
-
     }
     @Override
     public void onListeningCanceled() {
