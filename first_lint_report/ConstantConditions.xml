@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/StepsActivity.java</file>
+    <line>27</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="method" FQNAME="com.example.vincenttran.suechef.StepsActivity void onCreate(android.os.Bundle savedInstanceState)" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Constant conditions &amp; exceptions</problem_class>
+    <description>Method invocation &lt;code&gt;setDisplayHomeAsUpEnabled&lt;/code&gt; may produce &lt;code&gt;java.lang.NullPointerException&lt;/code&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java</file>
+    <line>47</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="method" FQNAME="com.example.vincenttran.suechef.RecipeActivity void onCreate(android.os.Bundle savedInstanceState)" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Constant conditions &amp; exceptions</problem_class>
+    <description>Method invocation &lt;code&gt;setDisplayHomeAsUpEnabled&lt;/code&gt; may produce &lt;code&gt;java.lang.NullPointerException&lt;/code&gt;</description>
+  </problem>
+</problems>
+

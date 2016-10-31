@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ImageListAdapter.java</file>
+    <line>39</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="method" FQNAME="com.example.vincenttran.suechef.ImageListAdapter android.view.View getView(int position, android.view.View convertView, android.view.ViewGroup parent)" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">@NotNull/@Nullable problems</problem_class>
+    <description>Not annotated method overrides method annotated with @NonNull</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ImageListAdapter.java</file>
+    <line>39</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="method" FQNAME="com.example.vincenttran.suechef.ImageListAdapter android.view.View getView(int position, android.view.View convertView, android.view.ViewGroup parent)" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">@NotNull/@Nullable problems</problem_class>
+    <description>Not annotated parameter overrides @NonNull parameter</description>
+  </problem>
+</problems>
+

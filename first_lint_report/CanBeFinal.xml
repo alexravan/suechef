@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/Recipe.java</file>
+    <line>13</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="field" FQNAME="com.example.vincenttran.suechef.Recipe directions" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+    <hints />
+    <description>Declaration can have final modifier</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/Recipe.java</file>
+    <line>14</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="field" FQNAME="com.example.vincenttran.suechef.Recipe ingredients" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+    <hints />
+    <description>Declaration can have final modifier</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/Recipe.java</file>
+    <line>10</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="field" FQNAME="com.example.vincenttran.suechef.Recipe imgUrl" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+    <hints />
+    <description>Declaration can have final modifier</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/Recipe.java</file>
+    <line>11</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="field" FQNAME="com.example.vincenttran.suechef.Recipe title" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+    <hints />
+    <description>Declaration can have final modifier</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/Recipe.java</file>
+    <line>12</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="field" FQNAME="com.example.vincenttran.suechef.Recipe description" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+    <hints />
+    <description>Declaration can have final modifier</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ExpandableListAdapter.java</file>
+    <line>23</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="field" FQNAME="com.example.vincenttran.suechef.ExpandableListAdapter _listDataChild" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+    <hints />
+    <description>Declaration can have final modifier</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ExpandableListAdapter.java</file>
+    <line>20</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="field" FQNAME="com.example.vincenttran.suechef.ExpandableListAdapter _context" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+    <hints />
+    <description>Declaration can have final modifier</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ExpandableListAdapter.java</file>
+    <line>21</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="field" FQNAME="com.example.vincenttran.suechef.ExpandableListAdapter _listDataHeader" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+    <hints />
+    <description>Declaration can have final modifier</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ImageListAdapter.java</file>
+    <line>24</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="field" FQNAME="com.example.vincenttran.suechef.ImageListAdapter context" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+    <hints />
+    <description>Declaration can have final modifier</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ImageListAdapter.java</file>
+    <line>27</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="field" FQNAME="com.example.vincenttran.suechef.ImageListAdapter recipes" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+    <hints />
+    <description>Declaration can have final modifier</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ImageListAdapter.java</file>
+    <line>25</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="field" FQNAME="com.example.vincenttran.suechef.ImageListAdapter inflater" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+    <hints />
+    <description>Declaration can have final modifier</description>
+  </problem>
+</problems>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java</file>
+    <line>89</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="method" FQNAME="com.example.vincenttran.suechef.RecipeActivity void prepareListData(java.lang.String description, java.lang.String[] ingredients, java.lang.String[] directions)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+    <description>Explicit type argument String can be replaced with &lt;&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java</file>
+    <line>90</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="method" FQNAME="com.example.vincenttran.suechef.RecipeActivity void prepareListData(java.lang.String description, java.lang.String[] ingredients, java.lang.String[] directions)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+    <description>Explicit type argument String, List&lt;String&gt; can be replaced with &lt;&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>26</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="field" FQNAME="com.example.vincenttran.suechef.MainActivity urls" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+    <description>Explicit type argument String can be replaced with &lt;&gt;</description>
+  </problem>
+</problems>
+

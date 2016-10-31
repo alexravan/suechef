@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/list_group.xml</file>
+    <line>14</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/list_group.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Padding and margin symmetry</problem_class>
+    <hints />
+    <description>&lt;html&gt;When you define &lt;code&gt;paddingLeft&lt;/code&gt; you should probably also define &lt;code&gt;paddingRight&lt;/code&gt; for right-to-left symmetry&lt;/html&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml</file>
+    <line>14</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Padding and margin symmetry</problem_class>
+    <hints />
+    <description>&lt;html&gt;When you define &lt;code&gt;paddingLeft&lt;/code&gt; you should probably also define &lt;code&gt;paddingRight&lt;/code&gt; for right-to-left symmetry&lt;/html&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml</file>
+    <line>36</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Padding and margin symmetry</problem_class>
+    <hints />
+    <description>&lt;html&gt;When you define &lt;code&gt;paddingEnd&lt;/code&gt; you should probably also define &lt;code&gt;paddingStart&lt;/code&gt; for right-to-left symmetry&lt;/html&gt;</description>
+  </problem>
+</problems>
+
