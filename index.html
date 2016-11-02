@@ -66,6 +66,15 @@
     expanded by default when they enter the recipe view. This was not the way we had it, as we felt users may not realize 
     that there was more information to be found below. But upon realizing that this behavior was not what users expected, we
     made the change and are satisfied with the outcome. </p>
+
+<p>We also ran SueChef in its current version through the Veracode static analysis to check for security flaws in our app.</p>
+
+<p>We set the policy evaluation of SueChef to low because we currently don't (and don't plan to for a while) have a login system. Anyone can download the app and start cooking! Therefore, no private information and being stored, and there isn't much to exploit in our app.</p>
+
+<p>And... *drumroll* we got a score of 94!</p>
+<img src="./images/veracode.png" alt="execute summary from Veracode">
+
+<p>Given how we have no critical info to protect in our app, that's pretty good. Regardless, certain issues like code quality can be addressed easily. We still have more functionality to add to our app, but by release, we hope to resolve all of these issues.</p>
         
 <!-- ***************************************************************************************************************** -->
 <!-- ***************************************************************************************************************** -->
