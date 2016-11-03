@@ -1,12 +1,16 @@
 package com.example.vincenttran.suechef;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.speech.tts.TextToSpeech;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v4.view.MotionEventCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -30,6 +34,8 @@ import ai.api.model.Result;
 import com.google.gson.JsonElement;
 import java.util.Map;
 
+
+
 public class StepsActivity extends AppCompatActivity implements RecognitionListener, AIListener{
     private TextView stepName;
     private TextView instruction;
@@ -42,9 +48,9 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
     private AIService aiService;
     private String CLIENT_ACCESS_TOKEN = "401423411e744fd582341c09f066b8e0";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_steps);
 
@@ -72,7 +78,20 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
         stepName = (TextView) findViewById(R.id.stepNumber);
         instruction = (TextView) findViewById(R.id.instruction);
 
+        // Make screen swipe-able (For next, repeat, previous)
+        findViewById(R.id.activity_steps).setOnTouchListener(new OnSwipeTouchListener(this) {
+            @Override
+            public void onSwipeLeft() {
+                changeStep(1);
+            }
 
+            @Override
+            public void onSwipeRight() {
+                changeStep(2);
+            }
+
+            // TODO: make swipe down repeat
+        });
 
         // Init TextToSpeech
         tts = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
@@ -88,6 +107,16 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
                 AIConfiguration.RecognitionEngine.System);
         aiService = AIService.getService(this, config);
         aiService.setListener(this);
+
+        // Set up FAB onclick
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                recognizer.stop();
+                aiService.startListening();
+            }
+        });
 
     }
 
@@ -160,28 +189,29 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
                 .getRecognizer();
         recognizer.addListener(this);
 
-//        File commandGrammar = new File(assetsDir, "commands.gram");
-//        recognizer.addKeywordSearch(KWS_SEARCH, commandGrammar);
         recognizer.addKeyphraseSearch(KWS_SEARCH, KEYPHRASE);
 
     }
 
-    public void changeStep(View view) {
-        switch (view.getId()) {
-            case R.id.nextButton:
+
+    // 1 -> Next
+    // 2 -> Previous
+    // Other -> Repeat
+    private void changeStep(int code) {
+        switch (code) {
+            case 1:             // Next
                 stepNumber++;
                 if (stepNumber > directions.length) stepNumber = directions.length;
                 break;
-            case R.id.backButton:
+            case 2:             // Back
                 stepNumber--;
                 if (stepNumber == 0) stepNumber = 1;
-                break;
         }
         setText();
     }
 
     private void setText() {
-        String step = getResources().getString(R.string.word_for_step) + stepNumber;
+        String step = getResources().getString(R.string.word_for_step) + " " + stepNumber;
         stepName.setText(step);
         String direction = directions[stepNumber - 1];
         instruction.setText(direction);
@@ -219,12 +249,8 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
         String text = hypothesis.getHypstr();
 
         if (text.equals(KEYPHRASE)) {
-            Toast.makeText(this, "I heard you!", Toast.LENGTH_SHORT).show();
-
-            recognizer.stop();
-
-            // TODO: call api.ai api to start listening
-            aiService.startListening();
+            recognizer.stop();                  // Stop listening for keyword
+            aiService.startListening();         // Start api.ai listener
         }
 
 
@@ -246,6 +272,7 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
 
     }
 
+
     @Override
     public void onResult(AIResponse response) {
         aiService.stopListening();
@@ -253,18 +280,27 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
 
         Result result = response.getResult();
 
-        // Get parameters
-        String parameterString = "";
-        if (result.getParameters() != null && !result.getParameters().isEmpty()) {
-            for (final Map.Entry<String, JsonElement> entry : result.getParameters().entrySet()) {
-                parameterString += "(" + entry.getKey() + ", " + entry.getValue() + ") ";
+        if (result.getAction().equals("changeStep")) {
+            // Get parameters
+            if (result.getParameters() != null && !result.getParameters().isEmpty()) {
+                for (final Map.Entry<String, JsonElement> entry : result.getParameters().entrySet()) {
+                    String command = entry.getValue().getAsString();
+                    if ("Next".equals(command)) {
+                        changeStep(1);
+                        break;
+                    } else if (command.equals("Previous")) {
+                        changeStep(2);
+                        break;
+                    } else if (command.equals("Repeat")) {
+                        changeStep(3);
+                        break;
+                    }
+                }
+            }
+            else {                // Command unknown
+                tts.speak(result.getFulfillment().getSpeech(), TextToSpeech.QUEUE_ADD, null, null);
             }
         }
-
-
-        Toast.makeText(this, "Query:" + result.getResolvedQuery() +
-                "\nAction: " + result.getAction() +
-                "\nParameters: " + parameterString, Toast.LENGTH_SHORT).show();
     }
 
     @Override
