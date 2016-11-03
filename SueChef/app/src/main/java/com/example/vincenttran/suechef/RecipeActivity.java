@@ -29,7 +29,6 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
 
-
         final Recipe recipe = (Recipe) getIntent().getSerializableExtra("recipe");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -57,7 +56,10 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(RecipeActivity.this, StepsActivity.class);
-                intent.putExtra("directions", recipe.directions);
+                List<String> directionsList = parseDirections(recipe.directions);
+                String[] directionsArray = new String[directionsList.size()];
+                directionsArray = directionsList.toArray(directionsArray);
+                intent.putExtra("directions", directionsArray);
                 startActivity(intent);
             }
         });
@@ -78,7 +80,6 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
-
     }
 
     private void prepareListData(String description, String[] ingredients, String[] directions) {
@@ -93,12 +94,23 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
         descriptionList.add(description);
 
         List<String> ingredientsList = Arrays.asList(ingredients);
-        List<String> directionsList = Arrays.asList(directions);
+        List<String> directionsList = parseDirections(directions); //Arrays.asList(directions);
 
         listDataChild.put(listDataHeader.get(0), descriptionList);
         listDataChild.put(listDataHeader.get(1), ingredientsList);
         listDataChild.put(listDataHeader.get(2), directionsList);
 
+    }
+
+    public List<String> parseDirections(String[] directions) {
+        List splitDirections = new ArrayList<String>();
+
+        for (String s : directions) {
+            String[] parts = s.split("\\. ");
+            splitDirections.addAll(Arrays.asList(parts));
+        }
+
+        return splitDirections;
     }
 
     @Override
