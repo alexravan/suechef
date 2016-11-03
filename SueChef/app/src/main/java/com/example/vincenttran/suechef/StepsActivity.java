@@ -31,10 +31,11 @@ import ai.api.AIService;
 import ai.api.model.AIError;
 import ai.api.model.AIResponse;
 import ai.api.model.Result;
+
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.google.gson.JsonElement;
 import java.util.Map;
-
-
 
 public class StepsActivity extends AppCompatActivity implements RecognitionListener, AIListener{
     private TextView stepName;
@@ -157,6 +158,7 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
         super.onPause();
         recognizer.stop();
         recognizer.shutdown();
+        tts.stop();
     }
 
     // App is closed, recognizer should be deleted
@@ -202,10 +204,16 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
             case 1:             // Next
                 stepNumber++;
                 if (stepNumber > directions.length) stepNumber = directions.length;
+                YoYo.with(Techniques.SlideInRight)
+                        .duration(300)
+                        .playOn(instruction);
                 break;
             case 2:             // Back
                 stepNumber--;
                 if (stepNumber == 0) stepNumber = 1;
+                YoYo.with(Techniques.SlideInLeft)
+                        .duration(300)
+                        .playOn(instruction);
         }
         setText();
     }
