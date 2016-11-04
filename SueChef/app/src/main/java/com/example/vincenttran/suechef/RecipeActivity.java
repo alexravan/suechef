@@ -57,7 +57,10 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(RecipeActivity.this, StepsActivity.class);
-                intent.putExtra("directions", recipe.directions);
+                List<String> directionsList = parseDirections(recipe.directions);
+                String[] directionsArray = new String[directionsList.size()];
+                directionsArray = directionsList.toArray(directionsArray);
+                intent.putExtra("directions", directionsArray);
                 startActivity(intent);
             }
         });
@@ -93,12 +96,21 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
         descriptionList.add(description);
 
         List<String> ingredientsList = Arrays.asList(ingredients);
-        List<String> directionsList = Arrays.asList(directions);
+        List<String> directionsList = parseDirections(directions);
 
         listDataChild.put(listDataHeader.get(0), descriptionList);
         listDataChild.put(listDataHeader.get(1), ingredientsList);
         listDataChild.put(listDataHeader.get(2), directionsList);
 
+    }
+
+    public List<String> parseDirections(String[] directions) {
+        List splitDirections = new ArrayList<String>();
+        for (String s : directions) {
+            String[] parts = s.split("\\. ");
+            splitDirections.addAll(Arrays.asList(parts));
+        }
+        return splitDirections;
     }
 
     @Override
