@@ -29,6 +29,7 @@
           <span class="ribbon-inner">
             <h1>Sue-chef</h1>
             <h2>An Android voice-activated cooking assistant.</h2>
+            <h3>Disclaimer: We know Sue is actually spelled Sous.</h3>
           </span>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
@@ -51,9 +52,28 @@
 <!-- ***************************************************************************************************************** -->
 <!-- ***************************************************************************************************************** -->
 
-<h1>Testing Our App (Leg 4) (10/31/16)</h1>
+<h1>Building upon the MVP/Polishing (10/3/16)</h1>
+
+<p>So far, we've successfullly hardcoded three recipes and created text-to-speech talk-throughs of the recipes. As touched upon earlier, core functionality of the app was missing. We were missing keyword spotting voice activation, voice command/recognition, dynamic and extensive selection of recipes, and overall front-end polish. Our most recent efforts targetted and mostly solved all of these issues.</p>
+
+<p>Firstly, we finally got around to incorporating CMUSphinx's keyword spotting. It was actually relatively simple, however we did have to import a lot of dictionary txt files that may be cluttering our app. We will have to reassess to see if these files are necessary, since we simply needed one string, "Okay, Sue Chef", to add to the kws_search method included in the CMUSphinx listener class.<code></code></p>
+
+<p>Secondly, we set up the API.ai SDK to easily send audio files (of voice commands) to API.ai to parse. We used the API.ai web console to configure our intents and entities. For now, we only had one intent, which is to change the step, appropriately named changeStep. We then set the intent to recognize various sentence structures and synonyms for "next", "back", and "repeat" and return those keywords in JSON format. This allows our app to easily tell what the <i>intent</i> of the user's command is.</p>
+
+<p>As mentioned, we hardcoded our recipes into our app so far, but we definitely want a server that can store and add new recipes so that all clients can receive them. We used recipes scraped from the web to populate a Mongo database, and any requests to our REST API would return a collection of all our recipes so far. Relevant info for each recipe includes steps, ingredients, and image URL, description and title. Although we haven't hooked up our backend to our Android app just yet, we predict that this shouldn't cause too many problems for us.</p>
+
+<p>Until now, we had buttons at the buttom of StepActivity to control the next, back, repeat commands. We wanted to get rid of these ugly buttons, but we didn't know how to still include manual navigation functionality. We decided to include gestures; by implementing swipe recognition, the user can now swipe left to get the next step, and swipe right to get the previous step. We thought this would be beneficial for UX, although we have not prompted the user to inform them that swiping is a possibility. We may solve this by including an information button in the navbar, or by having an onboarding process upon first install of the app.</p>
+
+<p>We've been talking a bit about including animations in our app to increase user experience. We finally decided to implement some basic slide on/off animations to supplement the swipe gestures. We found a library on GitHub called AndroidViewAnimations created by daimajia. This allowed very simple and straightforward implementation of just what we wanted. Now, when a user swipes to navigate through the recipe, the corresponding text on screen slides on or off the screen. Just beautiful.</p>
+
+
+<!-- ***************************************************************************************************************** -->
+<!-- ***************************************************************************************************************** -->
+<!-- ***************************************************************************************************************** -->
+
+<h1>Testing Our App (10/31/16)</h1>
        
-<p> For leg 4, we underwent a series of various testing methods to improve our app. First were the required methods, Lint and
+<p> For the most recent sprint, we underwent a series of various testing methods to improve our app. First were the required methods, Lint and
     Crashlytics. You can read about our experience with Lint in-depth below. Crashlytics was a much less involved process, it
     was simply to register for and install, and relatively simple to use as well. We made sure it was working correctly by 
     coding in a test button that forced the app to crash. So far we have not encountered any actual crashes since beginning 
