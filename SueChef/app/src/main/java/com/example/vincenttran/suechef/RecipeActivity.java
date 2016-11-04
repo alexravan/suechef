@@ -29,7 +29,6 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
 
-
         final Recipe recipe = (Recipe) getIntent().getSerializableExtra("recipe");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -81,7 +80,6 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
-
     }
 
     private void prepareListData(String description, String[] ingredients, String[] directions) {
@@ -96,7 +94,11 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
         descriptionList.add(description);
 
         List<String> ingredientsList = Arrays.asList(ingredients);
+<<<<<<< HEAD
         List<String> directionsList = parseDirections(directions);
+=======
+        List<String> directionsList = parseDirections(directions); //Arrays.asList(directions);
+>>>>>>> alpha
 
         listDataChild.put(listDataHeader.get(0), descriptionList);
         listDataChild.put(listDataHeader.get(1), ingredientsList);
@@ -106,10 +108,18 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
 
     public List<String> parseDirections(String[] directions) {
         List splitDirections = new ArrayList<String>();
+<<<<<<< HEAD
+=======
+
+>>>>>>> alpha
         for (String s : directions) {
             String[] parts = s.split("\\. ");
             splitDirections.addAll(Arrays.asList(parts));
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> alpha
         return splitDirections;
     }
 
