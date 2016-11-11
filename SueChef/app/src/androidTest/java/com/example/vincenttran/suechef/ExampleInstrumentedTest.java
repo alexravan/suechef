@@ -21,6 +21,6 @@
 //        // Context of the app under test.
 //        Context appContext = InstrumentationRegistry.getTargetContext();
 //
-//        assertEquals("com.example.vincenttran.suechef", appContext.getPackageName());
+//        assertEquals("com.example.vincenttran.com.vincenttran.suechef", appContext.getPackageName());
 //    }
 //}

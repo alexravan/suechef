@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.vincenttran.suechef.MainActivity">
+    tools:context="com.example.vincenttran.suechef.com.vincenttran.suechef.MainActivity">
 
     <android.support.v7.widget.Toolbar
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -29,7 +29,7 @@
     <!--<TextView-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
-        <!--android:hint="com.example.vincenttran.suechef.Recipe Title"/>-->
+        <!--android:hint="com.vincenttran.suechefcenttran.suechef.Recipe Title"/>-->
 
     <GridView
         
@@ -66,7 +66,7 @@
 <!--android:horizontalSpacing="5dp"-->
 <!--android:stretchMode="columnWidth"-->
 <!--android:gravity="center"-->
-<!--tools:context="com.example.vincenttran.suechef.MainActivity">-->
+<!--tools:context="com.vincenttran.suechefcenttran.suechef.MainActivity">-->
 
 <!--<EditText-->
     <!--android:layout_width="match_parent"-->
@@ -80,6 +80,6 @@
 <!--<TextView-->
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="wrap_content"-->
-    <!--android:hint="com.example.vincenttran.suechef.Recipe Title"/>-->
+    <!--android:hint="com.vincenttran.suechefcenttran.suechef.Recipe Title"/>-->
 <!--</GridView>-->
 
