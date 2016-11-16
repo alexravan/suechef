@@ -1,4 +1,4 @@
-//package com.example.vincenttran.suechef;
+//package com.vincenttran.suechef;
 //
 //import org.junit.Test;
 //

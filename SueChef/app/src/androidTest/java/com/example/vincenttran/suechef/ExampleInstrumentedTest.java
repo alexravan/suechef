@@ -1,4 +1,4 @@
-//package com.example.vincenttran.suechef;
+//package com.vincenttran.suechef;
 //
 //import android.content.Context;
 //import android.support.test.InstrumentationRegistry;

@@ -29,6 +29,8 @@ public class RecipeActivity extends AppCompatActivity implements RecognitionList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
 
+
+
         final Recipe recipe = (Recipe) getIntent().getSerializableExtra("recipe");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

@@ -5,7 +5,7 @@
     android:id="@+id/activity_steps"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.vincenttran.suechef.com.vincenttran.suechef.StepsActivity">
+    tools:context="com.vincenttran.suechef.StepsActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

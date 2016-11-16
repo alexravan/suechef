@@ -1,9 +1,15 @@
 package com.vincenttran.suechef;
 
+import android.Manifest;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.speech.tts.TextToSpeech;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -35,6 +41,7 @@ import com.google.gson.JsonElement;
 import java.util.Map;
 
 public class StepsActivity extends AppCompatActivity implements RecognitionListener, AIListener{
+    private static final int RECORD_AUDIO_REQUEST_CODE = 1337;
     private TextView stepName;
     private TextView instruction;
     private String[] directions;
@@ -70,6 +77,17 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
         });
 
 
+        /***** Check for Permissions *****/
+        int permissionCheck = ContextCompat.checkSelfPermission(getApplicationContext(),
+                Manifest.permission.RECORD_AUDIO);
+        if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(StepsActivity.this, new String[]{Manifest.permission.RECORD_AUDIO}, RECORD_AUDIO_REQUEST_CODE);
+        } else {
+            enableMicrophoneFeatures();
+        }
+        /*********************************/
+
+
         directions = getIntent().getStringArrayExtra("directions");
         stepNumber = 1;
 
@@ -99,22 +117,7 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
             }
         });
 
-        // Init API.ai
-        final AIConfiguration config = new AIConfiguration(CLIENT_ACCESS_TOKEN,
-                AIConfiguration.SupportedLanguages.English,
-                AIConfiguration.RecognitionEngine.System);
-        aiService = AIService.getService(this, config);
-        aiService.setListener(this);
 
-        // Set up FAB onclick
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                recognizer.stop();
-                aiService.startListening();
-            }
-        });
 
     }
 
@@ -122,6 +125,11 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
     @Override
     protected void onResume() {
         super.onResume();
+        enableMicrophoneFeatures();
+    }
+
+    // Called when permissions are granted
+    private void enableMicrophoneFeatures() {
         // Init assets for CMUSphinx
         new AsyncTask<Void, Void, Exception>() {
             @Override
@@ -146,6 +154,23 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
                 }
             }
         }.execute();
+
+        // Init API.ai
+        final AIConfiguration config = new AIConfiguration(CLIENT_ACCESS_TOKEN,
+                AIConfiguration.SupportedLanguages.English,
+                AIConfiguration.RecognitionEngine.System);
+        aiService = AIService.getService(this, config);
+        aiService.setListener(this);
+
+        // Set up FAB onclick
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                recognizer.stop();
+                aiService.startListening();
+            }
+        });
     }
 
 
@@ -320,4 +345,18 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
 
     }
     /****************************************************************************************/
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        switch (requestCode) {
+            case RECORD_AUDIO_REQUEST_CODE: {
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    enableMicrophoneFeatures();
+                }
+            }
+        }
+    }
 }

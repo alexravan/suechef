@@ -12,15 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name="com.vincenttran.suechef.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.vincenttran.suechef.RecipeActivity" />
-        <activity android:name="com.vincenttran.suechef.StepsActivity" />
+        <activity android:name=".RecipeActivity" />
+        <activity android:name=".StepsActivity" />
     </application>
 
 </manifest>
