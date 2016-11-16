@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/list_group.xml</file>
+    <line>14</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/list_group.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Using left/right instead of start/end attributes</problem_class>
+    <hints />
+    <description>&lt;html&gt;Consider replacing &lt;code&gt;android:paddingLeft&lt;/code&gt; with &lt;code&gt;android:paddingStart=&quot;?android:attr/expandableListPreferredItemPaddingLeft&quot;&lt;/code&gt; to better support right-to-left layouts&lt;/html&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml</file>
+    <line>14</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Using left/right instead of start/end attributes</problem_class>
+    <hints />
+    <description>&lt;html&gt;Consider replacing &lt;code&gt;android:paddingLeft&lt;/code&gt; with &lt;code&gt;android:paddingStart=&quot;?android:attr/expandableListPreferredChildPaddingLeft&quot;&lt;/code&gt; to better support right-to-left layouts&lt;/html&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_steps.xml</file>
+    <line>57</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_steps.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Using left/right instead of start/end attributes</problem_class>
+    <hints />
+    <description>&lt;html&gt;Consider replacing &lt;code&gt;android:layout_alignParentLeft&lt;/code&gt; with &lt;code&gt;android:layout_alignParentStart=&quot;true&quot;&lt;/code&gt; to better support right-to-left layouts&lt;/html&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_steps.xml</file>
+    <line>75</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_steps.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Using left/right instead of start/end attributes</problem_class>
+    <hints />
+    <description>&lt;html&gt;Consider replacing &lt;code&gt;android:layout_alignParentRight&lt;/code&gt; with &lt;code&gt;android:layout_alignParentEnd=&quot;true&quot;&lt;/code&gt; to better support right-to-left layouts&lt;/html&gt;</description>
+  </problem>
+</problems>
+

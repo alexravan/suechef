@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_recipe.xml</file>
+    <line>8</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_recipe.xml" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'vincenttran'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_recipe.xml</file>
+    <line>8</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_recipe.xml" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'suechef'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_steps.xml</file>
+    <line>9</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_steps.xml" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'vincenttran'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_steps.xml</file>
+    <line>9</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_steps.xml" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'suechef'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml</file>
+    <line>8</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'vincenttran'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml</file>
+    <line>8</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'suechef'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml</file>
+    <line>32</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'vincenttran'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml</file>
+    <line>32</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'suechef'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml</file>
+    <line>69</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'vincenttran'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml</file>
+    <line>69</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'suechef'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml</file>
+    <line>83</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'vincenttran'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml</file>
+    <line>83</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'suechef'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/androidTest/java/com/example/vincenttran/suechef/ExampleInstrumentedTest.java</file>
+    <line>24</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/vincenttran/suechef/ExampleInstrumentedTest.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'vincenttran'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/androidTest/java/com/example/vincenttran/suechef/ExampleInstrumentedTest.java</file>
+    <line>24</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/vincenttran/suechef/ExampleInstrumentedTest.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'suechef'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params</file>
+    <line>1</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'lowerf'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params</file>
+    <line>2</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'upperf'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params</file>
+    <line>3</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'nfilt'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params</file>
+    <line>7</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'svspec'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params</file>
+    <line>10</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'varnorm'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params</file>
+    <line>12</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'cmninit'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/README</file>
+    <line>2</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/README" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'Cephei'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/README</file>
+    <line>17</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/README" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'CEPHEI'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/README</file>
+    <line>20</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/README" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'CEPHEI'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/README</file>
+    <line>34</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/README" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'sphinxtrain'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params.md5</file>
+    <line>1</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params.md5" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'bcaff'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params.md5</file>
+    <line>1</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/feat.params.md5" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'caaa'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/sendump.md5</file>
+    <line>1</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/sendump.md5" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'cdbb'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/noisedict.md5</file>
+    <line>1</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/noisedict.md5" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'ffef'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/transition_matrices.md5</file>
+    <line>1</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/en-us-ptm/transition_matrices.md5" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'bdfe'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/weather.dmp.md5</file>
+    <line>1</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/weather.dmp.md5" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'bbcd'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/cmudict-en-us.dict.md5</file>
+    <line>1</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/cmudict-en-us.dict.md5" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'eddf'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/commands.gram.md5</file>
+    <line>1</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/commands.gram.md5" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'febec'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/menu.gram.md5</file>
+    <line>1</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/menu.gram.md5" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'febec'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/assets.lst</file>
+    <line>1</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/assets.lst" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'cmudict'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/assets.lst</file>
+    <line>7</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/assets.lst" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'mdef'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/assets.lst</file>
+    <line>9</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/assets.lst" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'noisedict'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/assets/sync/assets.lst</file>
+    <line>10</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/assets/sync/assets.lst" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'sendump'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java</file>
+    <line>75</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'listview'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/Recipe.java</file>
+    <line>6</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/Recipe.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'Ravan'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ExpandableListAdapter.java</file>
+    <line>16</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ExpandableListAdapter.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'vincenttran'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ExpandableListAdapter.java</file>
+    <line>33</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ExpandableListAdapter.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'Posititon'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ExpandableListAdapter.java</file>
+    <line>50</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ExpandableListAdapter.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'infal'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ExpandableListAdapter.java</file>
+    <line>89</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ExpandableListAdapter.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'infal'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>68</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'maxresdefault'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>74</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'Cormick'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>78</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'ungreased'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>89</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'Cormick'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>93</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'ungreased'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>96</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'Tokushima'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>96</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'Ramen'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>96</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'ramen'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>96</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'tokushima'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>96</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'ramen'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>96</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'fukushima'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>96</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'ramen'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>96</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'ramen'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ImageListAdapter.java</file>
+    <line>20</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ImageListAdapter.java" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'vincenttran'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml</file>
+    <line>3</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'vincenttran'</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml</file>
+    <line>3</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+    <problem_class severity="TYPO" attribute_key="TYPO">Typo</problem_class>
+    <description>Typo: In word 'suechef'</description>
+  </problem>
+</problems>
+

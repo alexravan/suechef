@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>43</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="method" FQNAME="com.example.vincenttran.suechef.MainActivity void onCreate(android.os.Bundle savedInstanceState)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused assignment</problem_class>
+    <description>Variable &lt;code&gt;context&lt;/code&gt; is never used</description>
+  </problem>
+</problems>
+

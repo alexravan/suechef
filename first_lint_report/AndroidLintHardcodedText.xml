@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_steps.xml</file>
+    <line>56</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_steps.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Hardcoded text</problem_class>
+    <hints />
+    <description>&lt;html&gt;[I18N] Hardcoded string &quot;Back&quot;, should use &lt;code&gt;@string&lt;/code&gt; resource&lt;/html&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_steps.xml</file>
+    <line>66</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_steps.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Hardcoded text</problem_class>
+    <hints />
+    <description>&lt;html&gt;[I18N] Hardcoded string &quot;Repeat&quot;, should use &lt;code&gt;@string&lt;/code&gt; resource&lt;/html&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_steps.xml</file>
+    <line>74</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_steps.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Hardcoded text</problem_class>
+    <hints />
+    <description>&lt;html&gt;[I18N] Hardcoded string &quot;Next&quot;, should use &lt;code&gt;@string&lt;/code&gt; resource&lt;/html&gt;</description>
+  </problem>
+</problems>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/grid_item_layout.xml</file>
+    <line>8</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/grid_item_layout.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Image without contentDescription</problem_class>
+    <hints />
+    <description>&lt;html&gt;[Accessibility] Missing &lt;code&gt;contentDescription&lt;/code&gt; attribute on image&lt;/html&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_recipe.xml</file>
+    <line>28</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_recipe.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Image without contentDescription</problem_class>
+    <hints />
+    <description>&lt;html&gt;[Accessibility] Missing &lt;code&gt;contentDescription&lt;/code&gt; attribute on image&lt;/html&gt;</description>
+  </problem>
+</problems>
+

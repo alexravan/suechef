@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/Recipe.java</file>
+    <line>5</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="class" FQNAME="com.example.vincenttran.suechef.Recipe" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Default File Template Usage</problem_class>
+    <description>Default File template</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ExpandableListAdapter.java</file>
+    <line>15</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="class" FQNAME="com.example.vincenttran.suechef.ExpandableListAdapter" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Default File Template Usage</problem_class>
+    <description>Default File template</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ImageListAdapter.java</file>
+    <line>19</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="class" FQNAME="com.example.vincenttran.suechef.ImageListAdapter" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Default File Template Usage</problem_class>
+    <description>Default File template</description>
+  </problem>
+</problems>
+

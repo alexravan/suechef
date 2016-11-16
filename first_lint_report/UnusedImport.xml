@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java</file>
+    <line>22</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import org.w3c.dom.Text;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java</file>
+    <line>15</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.widget.TextView;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java</file>
+    <line>14</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.widget.ListView;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java</file>
+    <line>11</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.widget.ArrayAdapter;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java</file>
+    <line>6</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/RecipeActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.support.design.widget.Snackbar;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>17</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import com.squareup.picasso.Picasso;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>16</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import com.koushikdutta.ion.Ion;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>15</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import com.koushikdutta.async.future.FutureCallback;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>14</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import com.google.gson.JsonObject;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>12</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.widget.Toast;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java</file>
+    <line>11</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/MainActivity.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import android.widget.ImageView;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ImageListAdapter.java</file>
+    <line>17</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ImageListAdapter.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import java.io.Serializable;&lt;/code&gt; #loc</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ImageListAdapter.java</file>
+    <line>15</line>
+    <module>app</module>
+    <package>com.example.vincenttran.suechef</package>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/vincenttran/suechef/ImageListAdapter.java" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+    <description>Unused import &lt;code&gt;import org.w3c.dom.Text;&lt;/code&gt; #loc</description>
+  </problem>
+</problems>
+
