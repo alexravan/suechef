@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView android:id="@+id/grid_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/contentDescription"
+        android:background="@color/colorBackground" />
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/grid_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="marquee"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="#44000000"
+        />
+
+</RelativeLayout>
+
+
+
+

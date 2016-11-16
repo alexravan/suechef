@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/support-annotations-25.0.0_e555b1db91f91fa8a509c4830f3c2bc998ee6c97.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/commons-io-2.4_db9d9c7f5dc9abc44c05f9a56b43532b2a4af315.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.android.support-recyclerview-v7-25.0.0_91ad644354f5ca92e511d1cb554335b5775240fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.android.support-animated-vector-drawable-25.0.0_5d477599fb411b3c6bf5b64c2743b81f318d2771.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.daimajia.easing/library/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7e947f993bf32a00fcb3078cdda8bb11c930afb">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.daimajia.easing-library-1.0.1_cff22c9a08c95c0b07ae6b9bbedfa2dd04c411ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.daimajia.androidanimations/library/1.1.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8cec50fc9cc847bad0d6ed7d93814f4b34744521">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.daimajia.androidanimations-library-1.1.3_c98092ac1c98b056f9991085098c9c249a68c86b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/internal_impl-25.0.0_306ad2f6bd598a143e33c73c48de40bb7283003b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.android.support-support-core-ui-25.0.0_3ab9da3e4335dde85f127b1b2e8cc9e110039ab3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.android.support-support-vector-drawable-25.0.0_169de6687b793936e57e2fd3300b0abe57d7b68d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.android.support-support-fragment-25.0.0_b71e4e18344a3b48af20b576ca2604c850c4f51f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-25.0.0_9a434d3193568d1b2fc08f2305008400f21288ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/internal_impl-25.0.0_411d41b9b678972b1330a6354fb5f893240d3462.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/library-2.4.0_9792373de1521339ebf726780a1bf80ef4558239.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/picasso-2.5.2_c031cd75d1d21af7efbd534a5db895dd5b36fee3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.android.support-support-v4-25.0.0_879e5aa932b9a65ed4b6a38c4e507ea98af8133a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/ai.api/sdk/1.10.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7a9a74d33a8ed1edda8eb0e9a7ad8a451462e82c">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/ai.api-sdk-1.10.0_b6a6945b405a0cc753a070d6ccc3d72eeb4dee7e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.android.support-support-compat-25.0.0_4f8d26ef04932df29f556727c9a849f13fde94c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.android.support-design-25.0.0_94f1ed17332652c37548764029dd3cbf96752dd4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.android.support-transition-25.0.0_b6a9bd62a61988c08362691f2609ec5f14d4f982.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.android.support-support-media-compat-25.0.0_fac4609571da4d4ae61de53a4ff330b74a5eaf94.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/internal_impl-25.0.0_b19e81dde71cfb0f2f4f6cbc1fe7edff02d9fcec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/libs/pocketsphinx-android-5prealpha-nolib.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9abb9316583beaa841a16f884282af120c5d4aa9">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/pocketsphinx-android-5prealpha-nolib_956e39ddf5921c384692c73b1102db8198c6ecbd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/internal_impl-25.0.0_f1202c02889d4b7d848877983d0dc2f362fc2b44.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.koushikdutta.ion/ion/2.1.9/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e54ea31584406fcc68225a8656f384c333ff2ee">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.koushikdutta.ion-ion-2.1.9_74f2def8c73d0cb2c56515ab0245914cc96072ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/gson-2.4_d749bc2c1b0183f8dcf9b6b49870a1752538ee3e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/internal_impl-25.0.0_b4223faaae62d465e295c08691bea76fed8db4b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.android.support-support-core-utils-25.0.0_3a44c21f11c8bc26d530e8dae72db2f471e699de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/exploded-aar/com.koushikdutta.async/androidasync/2.1.9/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="60d0e28fe7ab6da6c03b54cd8ede502284d51a81">
+        <dex dex="/Users/vincenttran/Desktop/suechef/SueChef/app/build/intermediates/pre-dexed/release/com.koushikdutta.async-androidasync-2.1.9_18917bdd404db5d6c69ceef8f78af9b31286153b.jar" />
+    </item>
+
+</items>
