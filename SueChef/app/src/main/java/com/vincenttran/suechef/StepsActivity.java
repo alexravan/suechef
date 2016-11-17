@@ -125,7 +125,7 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
     @Override
     protected void onResume() {
         super.onResume();
-        enableMicrophoneFeatures();
+//        enableMicrophoneFeatures();
     }
 
     // Called when permissions are granted
@@ -177,10 +177,11 @@ public class StepsActivity extends AppCompatActivity implements RecognitionListe
     // User minimizes app, should stop keyword search
     @Override
     protected void onPause() {
+//        recognizer.stop();
+//        recognizer.cancel();
+//        recognizer = null;
+//        tts.stop();
         super.onPause();
-        recognizer.stop();
-        recognizer.shutdown();
-        tts.stop();
     }
 
     // App is closed, recognizer should be deleted
