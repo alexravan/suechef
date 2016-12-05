@@ -6,9 +6,10 @@ from pymongo import MongoClient
 from collections import defaultdict
 # from json import , loads, JSONEncoder, JSONDecoder
 import datetime
-import pickle
 from bson import Binary, Code
 from bson.json_util import dumps, loads
+from bson.objectid import ObjectId
+
 
 
 # configuration
@@ -21,8 +22,9 @@ app.config.from_object(__name__)
 # connect to the database
 connection = Connection(app.config['MONGODB_HOST'],
                         app.config['MONGODB_PORT'])
-client = MongoClient('localhost', 27017)
-db = client.test
+# client = MongoClient('0.0.0.0', 27017)
+# db = client.test
+db = connection.heroku_kj0r1xtt
 f = open('links.txt', 'r')
 
 
@@ -47,7 +49,6 @@ class Recipe(Document):
     }
 
 
-# rp = connection['test'].recipes
 
 
 rp = db.recipes
@@ -71,7 +72,7 @@ def index():
 		ingredients = poopjson['recipe']['page_recipe_ingredients']
 		image = poopjson['recipe']['page_image_url']
 		rec = {'title': title, 'description': description, 'ingredients': ingredients, 'instructions': instructions, 'image_url': image }
-		collection = connection['test'].recipes
+		collection = connection['heroku_kj0r1xtt'].recipes
 		collection.insert(rec)
 	return '1'
 
@@ -88,5 +89,19 @@ def getr():
 
 	return dumps(blah)
 
+
+@app.route('/newrecipes/<startid>')
+def newgetr(startid=None, **kwargs):
+	# sort = {'id': -1}
+	sort = {'timestamp': -1}
+
+	
+	blah  = rp.find( {"_id": {"$lt" : ObjectId(startid) } }).limit(25)
+				# find({"date": {"$lt": d}}).sort("author"):
+	print blah
+
+	return dumps(blah)
+
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True, port=33507)
+
